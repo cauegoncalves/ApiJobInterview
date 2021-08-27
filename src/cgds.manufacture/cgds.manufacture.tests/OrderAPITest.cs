@@ -19,13 +19,13 @@ namespace cgds.manufacture.tests
     [TestFixture]
     public class OrderAPITest
     {
-        private AlbelliAPIFactory apiFactory;
+        private ManufactureAPIFactory apiFactory;
         private HttpClient httpClient;
 
         [SetUp]
         public void SetUp()
         {
-            apiFactory = new AlbelliAPIFactory();
+            apiFactory = new ManufactureAPIFactory();
             httpClient = apiFactory.CreateClient();
         }
 
