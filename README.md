@@ -1,6 +1,6 @@
 # Interview - Technical Assignment - Caue Gonçalves dos Santos #
 
-This project was created to answer a technical assignment for a IT company based on Netherlands. The purpose of the project was to show my skills as a Senior Software Engineer and how I would build a testable and maintanable software using design and architecture best practices.
+This project was created to answer a technical assignment for a IT company based on Netherlands. The purpose of the project was to present my skills as a Senior Software Engineer and how I would build a testable, maintanable and scalable application using design and architecture best practices.
 
 * The [Assignment](docs/assignment.pdf) 
 
@@ -13,11 +13,11 @@ This project was created to answer a technical assignment for a IT company based
     - **Strategy**: Choosing the right component for each infrastruture peace
     - **Repository**: Repository pattern to store and retrieve data
 
-##### \* There were many ways to solve this problem, like using a EF In Memory, a database. But considering the limited scope of the API and the purpose of the development, I think applying a design pattern will prove some OOP skill.
+##### \* There are many ways to solve this problem, for example: using a EF In Memory, using a database. But considering the limited scope of the API and the purpose of the development, applying a design pattern will prove some OOP skill.
 
 
 - #### **SOLID Principles**
-    - **Single Responsability**: Each class and each method has one responsability. Except the facade class... sometimes we have to make choices...
+    - **Single Responsability**: Each class and each method has one responsability.
     - **Open Close**: We can add new Product Types without impacting the existing ones.
     - **Dependency Inversion**: The repository, storage service and order service, the entire application is working with abstraction, not implementation. The responsible for inject the implementatios is the IoC project.
 
