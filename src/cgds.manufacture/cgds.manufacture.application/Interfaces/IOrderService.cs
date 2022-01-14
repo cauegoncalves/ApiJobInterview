@@ -7,6 +7,7 @@ namespace cgds.manufacture.application.Interfaces
     {
 
         decimal Save(Order order);
+        Order GetById(int id);
 
     }
 }

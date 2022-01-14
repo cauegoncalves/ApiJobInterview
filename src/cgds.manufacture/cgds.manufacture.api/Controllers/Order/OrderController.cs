@@ -10,19 +10,17 @@ namespace cgds.manufacture.api.Controllers
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
     {
-        private readonly IOrderRepository _orderRepository;
         private readonly IOrderService _orderService;
 
-        public OrderController(IOrderRepository orderRepository, IOrderService orderService)
+        public OrderController(IOrderService orderService)
         {
-            this._orderRepository = orderRepository;
             this._orderService = orderService;
         }
 
         [HttpGet("{orderId}")]
         public IActionResult Get(int orderId)
         {
-            var order = _orderRepository.GetById(orderId);
+            var order = _orderService.GetById(orderId);
 
             if (order == null)
                 return NotFound();

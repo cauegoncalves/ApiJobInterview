@@ -14,7 +14,7 @@ namespace cgds.manufacture.reposity.inmemory
 
         public OrderRepository()
         {
-            orderTable = new ConcurrentDictionary< int, Order>();
+            orderTable = new ConcurrentDictionary<int, Order>();
         }
 
         public Order GetById(int id)

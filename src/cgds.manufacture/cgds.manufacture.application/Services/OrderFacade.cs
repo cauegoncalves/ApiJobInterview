@@ -22,5 +22,10 @@ namespace cgds.manufacture.application.Services
             return order.StorageWidth;
         }
 
+        public Order GetById(int id)
+        {
+            return orderRepository.GetById(id);
+        }
+
     }
 }
